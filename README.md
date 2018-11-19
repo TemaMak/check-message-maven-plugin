@@ -1,1 +1,0 @@
-# maven-plugin-check-message

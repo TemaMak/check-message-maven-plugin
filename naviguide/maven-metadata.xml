@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>check-message-maven-plugin Maven Plugin</name>
+      <prefix>check-message-maven-plugin</prefix>
+      <artifactId>check-message-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
