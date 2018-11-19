@@ -2,9 +2,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>naviguide</groupId>
+  <groupId>com.github.TemaMak</groupId>
   <artifactId>check-message-maven-plugin</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>master-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>check-message-maven-plugin Maven Plugin</name>
@@ -107,7 +107,7 @@
                 <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
                 <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
                 <includes><include>**/*</include></includes>
-                <repositoryName>maven-plugin-check-message</repositoryName>      <!-- github repo name -->
+                <repositoryName>check-message-maven-plugin</repositoryName>      <!-- github repo name -->
                 <repositoryOwner>TemaMak</repositoryOwner>    <!-- github username  -->
             </configuration>
             <executions>

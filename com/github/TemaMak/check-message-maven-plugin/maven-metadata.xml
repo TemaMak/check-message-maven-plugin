@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>naviguide</groupId>
+  <groupId>com.github.TemaMak</groupId>
   <artifactId>check-message-maven-plugin</artifactId>
   <versioning>
-    <latest>0.0.1-SNAPSHOT</latest>
+    <latest>master-SNAPSHOT</latest>
     <versions>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>master-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20181119185050</lastUpdated>
+    <lastUpdated>20181119192506</lastUpdated>
   </versioning>
 </metadata>
