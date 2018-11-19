@@ -107,7 +107,7 @@
                 <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
                 <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
                 <includes><include>**/*</include></includes>
-                <repositoryName>maven-plugin-check-message</repositoryName>      <!-- github repo name -->
+                <repositoryName>check-message-maven-plugin</repositoryName>      <!-- github repo name -->
                 <repositoryOwner>TemaMak</repositoryOwner>    <!-- github username  -->
             </configuration>
             <executions>

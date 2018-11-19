@@ -16,11 +16,11 @@ public class MessageProblemHolder {
 	Set<String> uniqProblems = new HashSet<String>();
 	
 	
-	public void addProblem(File f, String message) throws IOException{
+	public void addMissedFiledProblem(String message, File f) throws IOException{
 		addProblem(f.getCanonicalPath(), message);
 	}
 	
-	public void addProblem(String filename, String message){
+	public void addProblem(String message, String filename){
 		if(messageProblems.get(message) == null){
 			messageProblems.put(message, new ArrayList<String>());
 		}
@@ -36,5 +36,9 @@ public class MessageProblemHolder {
 	
 	public Set<Entry<String, List<String>>> entrySet(){
 		return messageProblems.entrySet();
+	}
+	
+	public Integer getCount(){
+		return messageProblems.size();
 	}
 }
