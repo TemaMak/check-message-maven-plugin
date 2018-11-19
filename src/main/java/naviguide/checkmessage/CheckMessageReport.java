@@ -104,7 +104,6 @@ public class CheckMessageReport  extends AbstractMavenReport
 					){
 						withOutText.addProblem(f, code);
 					}
-					logger.info(message.attr("code"));
         		}
 				
 			} catch (IOException e) {
