@@ -21,7 +21,6 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.ResolutionScope;
 import org.apache.maven.reporting.AbstractMavenReport;
 import org.apache.maven.reporting.MavenReportException;
-import org.codehaus.plexus.util.FileUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -34,28 +33,23 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
-import java.util.ResourceBundle;
 
 
 @Mojo(
-        name = "check-message",
-        defaultPhase = LifecyclePhase.SITE,
-        requiresDependencyResolution = ResolutionScope.RUNTIME,
-        requiresProject = true,
-        threadSafe = true
-        )
+    name = "check-message",
+    defaultPhase = LifecyclePhase.SITE,
+    requiresDependencyResolution = ResolutionScope.RUNTIME,
+    requiresProject = true,
+    threadSafe = true
+)
 public class CheckMessageReport  extends AbstractMavenReport
 {
 
@@ -165,7 +159,7 @@ public class CheckMessageReport  extends AbstractMavenReport
 						
 							if(p.containsKey(code) == false){
 								localeMissing.addProblem(code, localeProps.getKey());
-								logger.info("missing locale " + localeProps.getKey() + " for code [" + code +"]");
+								logger.debug("missing locale " + localeProps.getKey() + " for code [" + code +"]");
 							}
 						
 					}
@@ -180,7 +174,7 @@ public class CheckMessageReport  extends AbstractMavenReport
         
         Sink mainSink = getSink();
         if (mainSink == null) {
-                throw new MavenReportException("Could not get the Doxia sink");
+            throw new MavenReportException("Could not get the Doxia sink");
         }
 
         // Page title
