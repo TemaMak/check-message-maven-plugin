@@ -4,7 +4,7 @@
 
   <groupId>com.github.TemaMak</groupId>
   <artifactId>check-message-maven-plugin</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <packaging>maven-plugin</packaging>
 
   <name>check-message-maven-plugin Maven Plugin</name>
@@ -109,7 +109,7 @@
                 <includes><include>**/*</include></includes>
                 <repositoryName>check-message-maven-plugin</repositoryName>      <!-- github repo name -->
                 <repositoryOwner>TemaMak</repositoryOwner>    <!-- github username  -->
-                <merge>treu</merge>
+                <merge>true</merge>
             </configuration>
             <executions>
               <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
